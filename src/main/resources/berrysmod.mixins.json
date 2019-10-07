@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "net.leftie.berrysmod.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "BerrysModMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

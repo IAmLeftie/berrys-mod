@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "berrysmod:golden_berry_block"
+    }
+  ],
+  "result": {
+    "item": "berrysmod_golden_berries",
+    "count": 9
+  }
+}

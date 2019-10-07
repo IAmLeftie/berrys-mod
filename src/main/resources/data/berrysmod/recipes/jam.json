@@ -1,0 +1,20 @@
+//TODO get this recipe working properly
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "berrysmod:berry_block"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "minecraft:potion",
+    "count": 1,
+    "data": {
+      "Potion": "berrysmod:jam"
+    }
+  }
+}
