@@ -1,4 +1,4 @@
-//TODO get this recipe working correctly
+
 
 {
   "type": "minecraft:crafting_shapeless",
@@ -11,10 +11,7 @@
     }
   ],
   "result": {
-    "item": "minecraft:potion",
-    "count": 1,
-    "data": {
-      "Potion": "berrysmod:golden_jam"
+    "item": "berrysmod:golden_jam",
+    "count": 1
     }
   }
-}
