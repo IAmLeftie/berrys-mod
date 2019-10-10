@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "berrysmod:golden_berry_block"
+    ]
+  },
+  "criteria": {
+    "has_at_least_9_golden_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_berries",
+            "count": {
+              "min": 9
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "berrysmod:golden_berry_block"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_at_least_9_golden_berries",
+      "has_the_recipe"
+    ]
+  ]
+}

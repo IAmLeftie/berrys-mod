@@ -1,0 +1,49 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "berrysmod:golden_berries"
+    ]
+  },
+  "criteria": {
+    "has_at_least_4_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sweet_berries",
+            "count": {
+              "min": 4
+            }
+          }
+        ]
+      }
+    },
+    "has_at_least_5_gold_nuggets": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:gold_nugget",
+            "count": {
+              "min": 5
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "berrysmod:golden_berries"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_at_least_4_berries",
+      "has_at_least_5_gold_nuggets",
+      "has_the_recipe"
+    ]
+  ]
+}

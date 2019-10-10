@@ -1,0 +1,49 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "berrysmod:jam"
+    ]
+  },
+  "criteria": {
+    "has_a_berry_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "berrysmod:berry_block",
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_a_glass_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:glass_bottle",
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "berrysmod:jam"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_a_berry_block",
+      "has_a_glass_bottle",
+      "has_the_recipe"
+    ]
+  ]
+}

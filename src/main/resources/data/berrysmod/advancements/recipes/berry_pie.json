@@ -1,0 +1,77 @@
+{
+  "parent": "minecraft:recipes/root",
+  "rewards": {
+    "recipes": [
+      "berrysmod:berry_pie"
+    ]
+  },
+  "criteria": {
+    "has_at_least_5_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sweet_berries",
+            "count": {
+              "min": 5
+            }
+          }
+        ]
+      }
+    },
+    "has_at_least_2_wheat": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:wheat",
+            "count": {
+              "min": 2
+            }
+          }
+        ]
+      }
+    },
+    "has_sugar": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sugar",
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_an_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:egg",
+            "count": {
+              "min": 1
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "berrysmod:berry_pie"
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_at_least_5_berries",
+      "has_at_least_2_wheat",
+      "has_sugar",
+      "has_an_egg",
+      "has_the_recipe"
+    ]
+  ]
+}
