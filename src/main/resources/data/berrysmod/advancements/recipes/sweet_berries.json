@@ -19,17 +19,10 @@
         ]
       }
     },
-    "has_the_recipe": {
-      "trigger": "minecraft:recipe_unlocked",
-      "conditions": {
-        "recipe": "minecraft:sweet_berries"
-      }
-    }
-  },
-  "requirements": [
-    [
-      "has_a_berry_block",
-      "has_the_recipe"
+    "requirements": [
+      [
+        "has_a_berry_block"
+      ]
     ]
-  ]
+  }
 }
