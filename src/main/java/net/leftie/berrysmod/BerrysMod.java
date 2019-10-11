@@ -41,6 +41,6 @@ public class BerrysMod implements ModInitializer {
 	//TODO try to get a bottle back to the player on eating
 	//public static final Potion JAM = new Potion(new StatusEffectInstance(StatusEffects.SATURATION, 1, 1));
 	//public static final Potion GOLDEN_JAM = new Potion(new StatusEffectInstance(StatusEffects.SATURATION, 1, 1), new StatusEffectInstance(StatusEffects.REGENERATION, 80));
-	public static final Item JAM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(0.8F).build()).maxCount(16).group(ItemGroup.FOOD));
-	public static final Item GOLDEN_JAM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(1F).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 1.0F).alwaysEdible().build()).maxCount(16).group(ItemGroup.FOOD));
+	public static final Item JAM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(4).saturationModifier(3.5F).build()).maxCount(16).group(ItemGroup.FOOD));
+	public static final Item GOLDEN_JAM = new Item(new Item.Settings().food(new FoodComponent.Builder().hunger(5).saturationModifier(4.0F).statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 1.0F).alwaysEdible().build()).maxCount(16).group(ItemGroup.FOOD));
 }

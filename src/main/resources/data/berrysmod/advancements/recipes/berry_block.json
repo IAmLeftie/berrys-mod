@@ -19,10 +19,17 @@
         ]
       }
     },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "berrysmod:berry_block"
+      }
+    }
+  },
   "requirements": [
     [
-      "has_at_least_9_berries"
+      "has_at_least_9_berries",
+      "has_the_recipe"
     ]
   ]
-  }
 }

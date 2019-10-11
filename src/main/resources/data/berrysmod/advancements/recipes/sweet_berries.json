@@ -19,10 +19,31 @@
         ]
       }
     },
+    "has_at_least_9_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:sweet_berries",
+            "count": {
+              "min": 9
+            }
+          }
+        ]
+      }
+    },
+    "has_the_recipe": {
+      "trigger": "minecraft:recipe_unlocked",
+      "conditions": {
+        "recipe": "minecraft:sweet_berries"
+      }
+    }
+  },
     "requirements": [
       [
-        "has_a_berry_block"
+        "has_a_berry_block",
+        "has_at_least_9_berries",
+        "has_the_recipe"
       ]
     ]
-  }
 }

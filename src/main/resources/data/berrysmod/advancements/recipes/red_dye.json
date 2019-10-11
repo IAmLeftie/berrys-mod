@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "minecraft:black_dye"
+      "minecraft:red_dye"
     ]
   },
   "criteria": {
@@ -11,7 +11,10 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:sweet_berries"
+            "item": "minecraft:sweet_berries",
+            "count": {
+              "min": 1
+            }
           }
         ]
       }
