@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "has_at_least_4_berries": {
+    "has_the_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -15,14 +15,7 @@
             "count": {
               "min": 4
             }
-          }
-        ]
-      }
-    },
-    "has_at_least_5_gold_nuggets": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "item": "minecraft:gold_nugget",
             "count": {
@@ -41,8 +34,7 @@
   },
   "requirements": [
     [
-      "has_at_least_4_berries",
-      "has_at_least_5_gold_nuggets",
+      "has_the_ingredients",
       "has_the_recipe"
     ]
   ]

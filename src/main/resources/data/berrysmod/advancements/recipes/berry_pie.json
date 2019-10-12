@@ -6,7 +6,7 @@
     ]
   },
   "criteria": {
-    "has_at_least_5_berries": {
+    "has_the_ingredients": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -15,42 +15,21 @@
             "count": {
               "min": 5
             }
-          }
-        ]
-      }
-    },
-    "has_at_least_2_wheat": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
+          {
+            "item": "minecraft:egg",
+            "count": {
+              "min": 1
+            }
+          },
           {
             "item": "minecraft:wheat",
             "count": {
               "min": 2
             }
-          }
-        ]
-      }
-    },
-    "has_sugar": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
+          },
           {
             "item": "minecraft:sugar",
-            "count": {
-              "min": 1
-            }
-          }
-        ]
-      }
-    },
-    "has_an_egg": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:egg",
             "count": {
               "min": 1
             }
@@ -67,10 +46,7 @@
   },
   "requirements": [
     [
-      "has_at_least_5_berries",
-      "has_at_least_2_wheat",
-      "has_sugar",
-      "has_an_egg",
+      "has_the_ingredients",
       "has_the_recipe"
     ]
   ]
