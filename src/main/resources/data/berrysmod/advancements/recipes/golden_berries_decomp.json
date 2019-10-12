@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "berrysmod:golden_berries"
+      "berrysmod:golden_berries_decomp"
     ]
   },
   "criteria": {
@@ -22,7 +22,7 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "berrysmod:golden_berries"
+        "recipe": "berrysmod:golden_berries_decomp"
       }
     }
   },
