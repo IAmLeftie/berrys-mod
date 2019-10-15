@@ -1,0 +1,17 @@
+
+
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "berrysmod:berry_block"
+    },
+    {
+      "item": "minecraft:glass_bottle"
+    }
+  ],
+  "result": {
+    "item": "berrysmod:jam",
+    "count": 1
+    }
+  }

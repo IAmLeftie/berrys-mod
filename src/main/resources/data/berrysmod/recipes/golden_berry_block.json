@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GGG",
+    "GGG",
+    "GGG"
+  ],
+  "key": {
+    "G": {
+      "item": "berrysmod:golden_berries"
+    }
+  },
+  "result": {
+    "item": "berrysmod:golden_berry_block",
+    "count": 1
+  }
+}
