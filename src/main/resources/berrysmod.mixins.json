@@ -1,11 +1,11 @@
 {
   "required": true,
-  "package": "net.leftie.berrysmod.mixin",
+  "package": "net.fabricmc.example.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
   ],
   "client": [
-    "BerrysModMixin"
+    "ExampleMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -1,6 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "berrysmod:block/golden_berry_block"
-  }
-}

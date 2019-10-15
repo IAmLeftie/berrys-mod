@@ -1,13 +1,12 @@
 {
   "schemaVersion": 1,
   "id": "berrysmod",
-  "version": "1.1.3",
+  "version": "${version}",
 
   "name": "Berry's Mod",
-  "description": "Adds Sweet Berry related items. Does not add physics gun made of sweet berries.",
+  "description": "Adds several berry-related items. Does not add physics gun made of berries.",
   "authors": [
-    "IAmLeftie, Coding",
-    "XDChristophXD, Original Idea"
+    "IAmLeftie"
   ],
   "contact": {
     "sources": "https://github.com/IAmLeftie/berrys-mod"
@@ -19,7 +18,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.leftie.berrysmod.BerrysMod"
+      "net.fabricmc.leftie.berrysmod"
     ]
   },
   "mixins": [
