@@ -2,6 +2,7 @@ package net.leftie.berrysmod;
 
 import io.github.indicode.fabric.tinyconfig.ModConfig;
 import net.fabricmc.api.ModInitializer;
+import net.leftie.berrysmod.block.ModBlocks;
 import net.leftie.berrysmod.item.ModItems;
 
 public class BerrysMod implements ModInitializer {
@@ -17,8 +18,9 @@ public class BerrysMod implements ModInitializer {
 
 		//register items
 		ModItems.registerItems();
+        ModBlocks.registerBlocks();
 
-		System.out.println("Hello Fabric world!");
+		System.out.println("Berry's Mod loaded successfully!");
 	}
 
 }
