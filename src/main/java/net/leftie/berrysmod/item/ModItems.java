@@ -19,6 +19,8 @@ public class ModItems {
     public static final Item GOLDEN_PIE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(8).saturationModifier(0.4F).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 160), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 900), 1.0F).build()));
     public static final Item JAM = new Jam();
     public static final Item GOLDEN_JAM = new GoldenJam();
+    public static final Item SLINGSHOT = new Slingshot(new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item PELLET = new SlingshotAmmo(new Item.Settings().group(ItemGroup.COMBAT));
 
     //register items
     public static void registerItems() {
@@ -29,6 +31,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "golden_pie"), GOLDEN_PIE);
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "jam"), JAM);
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "golden_jam"), GOLDEN_JAM);
+        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "slingshot"), SLINGSHOT);
+        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "pellet"), PELLET);
 
         //register and categorize block items
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "berry_block"), new BlockItem(ModBlocks.BERRY_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
