@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "berrysmod:golden_berries"
+  },
+  "result": "berrysmod:gold_cranberries",
+  "experience": 0.1,
+  "cookingtime": 100
+}

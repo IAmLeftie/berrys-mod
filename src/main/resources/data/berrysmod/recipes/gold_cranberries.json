@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "GBG",
+    "BGB",
+    "GBG"
+  ],
+  "key": {
+    "B": {
+      "item": "berrysmod:cranberries"
+    },
+    "G": {
+      "item": "minecraft:gold_nugget"
+    }
+  },
+    "result": {
+      "item": "berrysmod:gold_cranberries",
+      "count": 4
+    }
+  }

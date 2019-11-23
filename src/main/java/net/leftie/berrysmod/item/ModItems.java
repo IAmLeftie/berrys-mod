@@ -4,23 +4,20 @@ import net.leftie.berrysmod.BerrysMod;
 import net.leftie.berrysmod.block.ModBlocks;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.FoodComponent;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ModItems {
 
     //define items
-    public static final Item GOLDEN_BERRIES = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(0.3F).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60), 1.0F).build()));
+    public static final Item GOLDEN_BERRIES = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1F).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 60), 1.0F).build()));
     public static final Item BERRY_PIE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(7).saturationModifier(0.3F).build()));
     public static final Item GOLDEN_PIE = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(8).saturationModifier(0.4F).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 160), 1.0F).statusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 900), 1.0F).build()));
     public static final Item JAM = new Jam();
     public static final Item GOLDEN_JAM = new GoldenJam();
-    public static final Item SLINGSHOT = new Slingshot(new Item.Settings().group(ItemGroup.COMBAT));
-    public static final Item PELLET = new SlingshotAmmo(new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item CRANBERRIES = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1F).build()));
+    public static final Item GOLD_CRANBERRIES = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().hunger(2).saturationModifier(1.3F).alwaysEdible().statusEffect(new StatusEffectInstance(StatusEffects.REGENERATION, 100), 1.0F).build()));
 
     //register items
     public static void registerItems() {
@@ -31,8 +28,8 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "golden_pie"), GOLDEN_PIE);
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "jam"), JAM);
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "golden_jam"), GOLDEN_JAM);
-        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "slingshot"), SLINGSHOT);
-        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "pellet"), PELLET);
+        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "cranberries"), CRANBERRIES);
+        Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "gold_cranberries"), GOLD_CRANBERRIES);
 
         //register and categorize block items
         Registry.register(Registry.ITEM, new Identifier(BerrysMod.MOD_ID, "berry_block"), new BlockItem(ModBlocks.BERRY_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS)));
